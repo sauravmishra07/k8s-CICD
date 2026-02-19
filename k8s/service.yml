@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 
 metadata: 
-  name: event-mng-svc
-  namespace: ems-ns
+  name: task-mng-svc
+  namespace: tms-ns
 
 spec: 
   selector: 
-    app: event-management
+    app: task-management
 
   ports: 
     - protocol: TCP 
