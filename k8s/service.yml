@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+
+metadata: 
+  name: event-mng-svc
+  namespace: ems-ns
+
+spec: 
+  selector: 
+    app: event-management
+
+  ports: 
+    - protocol: TCP 
+      port: 5173
+      targetPort: 80

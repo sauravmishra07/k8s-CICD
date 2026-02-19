@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: event-management-deployment
+  namespace: ems-ns
+  labels:
+    app: event-management
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: event-management
+
+  template:
+    metadata:
+      labels:
+        app: event-management
+
+    spec:
+      containers:
+      - name: ems-container
+        image: sauravmishra07/ems:tag
+        ports:
+          - containerPort: 5173
+
