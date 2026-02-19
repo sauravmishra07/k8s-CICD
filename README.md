@@ -129,6 +129,8 @@ Verify service:
 kubectl get services -n tms-ns
 ```
 
+![Kubernetes Deployment Status](docs/images/k8s-deployment-status.png)
+
 ### 4. Access the Application
 
 #### Port Forwarding
@@ -136,6 +138,8 @@ kubectl get services -n tms-ns
 ```bash
 kubectl port-forward -n tms-ns service/task-management-service 5173:80
 ```
+
+![Port Forwarding Output](docs/images/port-forwarding-output.png)
 
 Access at: `http://localhost:5173`
 
