@@ -23,7 +23,7 @@ spec:
       - name: tms-container
         image: sauravmishra07/ems:tag
         ports:
-          - containerPort: 5173
+          - containerPort: 80
 
         resources: 
           requests: 
